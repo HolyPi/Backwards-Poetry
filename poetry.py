@@ -22,37 +22,38 @@ def lines_printed_backwards(lines_list):
     for i in range(len(lines_list)):
         print(i, end = " ")
         print(lines_list[i])
-    
+
     #TODO: Use for loop to print out items in list.
     pass
 
 def lines_printed_random(lines_list):
     '''Function which will randomly select lines from a list of strings and print them out in random order.'''
+
     i = 0
     for line in lines_list:
         randomLine = random.choice(lines_list)
         print(randomLine)
         i+=1
 
-# with open('poetry.py', 'r') as poem:
-#     randomLine = poem.readlines()[wordSelect]
-
-
-    # print(random.choice())
-    #     random.choice(poem)
-    # print(random.choice())
-    # random.choice(poem)
     pass
 
 
 
-def my_custom_function():
+def lines_Irregular(lines_list):
     '''Does something of my choosing. TODO: comment later'''
+    string = poem
+    # reversal = ' '.join(reversed(string))
+    # print(reversal)
+    Irregular = string.swapcase()
+    print(Irregular)
+
     pass
+
 
 #testing code
 #TODO: get poem string into list of lines.
-lines_printed_backwards(lines_list)
+# lines_printed_backwards(lines_list)
+lines_Irregular(lines_list)
 # lines_printed_random(lines_list)
 
 #lines_printed_backwards()
