@@ -29,9 +29,15 @@ def lines_printed_random(lines_list):
 
 # with open('poetry.py', 'r') as poem:
 #     randomLine = poem.readlines()[wordSelect]
-    randomline = random.choice(poem)
+    randomline = random.choice(lines_list)
     print(randomline)
+
+    # print(random.choice())
+    #     random.choice(poem)
+    # print(random.choice())
+    # random.choice(poem)
     pass
+
 
 
 def my_custom_function():
@@ -41,7 +47,7 @@ def my_custom_function():
 #testing code
 #TODO: get poem string into list of lines.
 lines_list = poem.split("\n")
-lines_printed_backwards(lines_list)
+# lines_printed_backwards(lines_list)
 lines_printed_random(lines_list)
 
 #lines_printed_backwards()
