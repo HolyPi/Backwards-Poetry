@@ -10,6 +10,7 @@ How cheerfully he seems to grin,
 And welcomes little fishes in,
      With gently smiling jaws!'''
 
+lines_list = poem.split("\n")
 
 def lines_printed_backwards(lines_list):
     '''This function takes in a list of strings
@@ -24,13 +25,14 @@ def lines_printed_backwards(lines_list):
 def lines_printed_random(lines_list):
     '''Function which will randomly select lines from a list of strings and print them out in random order.'''
     i = 0
-    for lines in poem:
+    for line in lines_list:
+        randomLine = random.choice(lines_list)
+        print(randomLine)
         i+=1
 
 # with open('poetry.py', 'r') as poem:
 #     randomLine = poem.readlines()[wordSelect]
-    randomline = random.choice(lines_list)
-    print(randomline)
+
 
     # print(random.choice())
     #     random.choice(poem)
@@ -46,7 +48,6 @@ def my_custom_function():
 
 #testing code
 #TODO: get poem string into list of lines.
-lines_list = poem.split("\n")
 # lines_printed_backwards(lines_list)
 lines_printed_random(lines_list)
 
