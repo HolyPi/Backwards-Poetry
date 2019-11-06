@@ -18,7 +18,11 @@ def lines_printed_backwards(lines_list):
     lines out in reverse with the line numbers reversed.'''
     #TODO: Reverse the list.
     lines_list.reverse()
-    print(lines_list)
+
+    for i in range(len(lines_list)):
+        print(i, end = " ")
+        print(lines_list[i])
+    
     #TODO: Use for loop to print out items in list.
     pass
 
@@ -48,8 +52,8 @@ def my_custom_function():
 
 #testing code
 #TODO: get poem string into list of lines.
-# lines_printed_backwards(lines_list)
-lines_printed_random(lines_list)
+lines_printed_backwards(lines_list)
+# lines_printed_random(lines_list)
 
 #lines_printed_backwards()
 #lines_printed_random()
