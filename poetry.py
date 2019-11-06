@@ -16,14 +16,11 @@ def lines_printed_backwards(lines_list):
     '''This function takes in a list of strings
     containing the lines of your poem as arguments and will print the poem
     lines out in reverse with the line numbers reversed.'''
-    #TODO: Reverse the list.
     lines_list.reverse()
 
     for i in range(len(lines_list)):
         print(i, end = " ")
         print(lines_list[i])
-
-    #TODO: Use for loop to print out items in list.
     pass
 
 def lines_printed_random(lines_list):
@@ -40,7 +37,7 @@ def lines_printed_random(lines_list):
 
 
 def lines_Irregular(lines_list):
-    '''Does something of my choosing. TODO: comment later'''
+    '''Irregulates words'''
     string = poem
     # reversal = ' '.join(reversed(string))
     # print(reversal)
@@ -50,11 +47,6 @@ def lines_Irregular(lines_list):
     pass
 
 
-#testing code
-#TODO: get poem string into list of lines.
-# lines_printed_backwards(lines_list)
+lines_printed_backwards(lines_list)
 lines_Irregular(lines_list)
-# lines_printed_random(lines_list)
-
-#lines_printed_backwards()
-#lines_printed_random()
+lines_printed_random(lines_list)
