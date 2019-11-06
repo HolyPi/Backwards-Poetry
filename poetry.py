@@ -16,12 +16,19 @@ def lines_printed_backwards(lines_list):
     '''This function takes in a list of strings
     containing the lines of your poem as arguments and will print the poem
     lines out in reverse with the line numbers reversed.'''
-    lines_list.reverse()
+    # lines_list.reverse()
 
-    for i in range(len(lines_list)):
-        print(i, end = " ")
-        print(lines_list[i])
-    pass
+    index = len(lines_list)
+    lines_list.reverse()
+    for line in lines_list:
+        print(f"{index} {line}")
+        index -=1
+    # for i in range(len(lines_list)):
+    #     print(i, end = " ")
+    #
+    #     print(lines_list[i])
+
+
 
 def lines_printed_random(lines_list):
     '''Function which will randomly select lines from a list of strings and print them out in random order.'''
@@ -32,7 +39,7 @@ def lines_printed_random(lines_list):
         print(randomLine)
         i+=1
 
-    pass
+
 
 
 
@@ -44,9 +51,9 @@ def lines_Irregular(lines_list):
     Irregular = string.swapcase()
     print(Irregular)
 
-    pass
+
 
 
 lines_printed_backwards(lines_list)
-lines_Irregular(lines_list)
-lines_printed_random(lines_list)
+# lines_Irregular(lines_list)
+# lines_printed_random(lines_list)
